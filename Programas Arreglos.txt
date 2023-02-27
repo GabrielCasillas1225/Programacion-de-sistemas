@@ -1,0 +1,21 @@
+#1 Ejecutamos el código y nos devuelve los datos ordenados de mayor a menor.
+
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+const int TAMANYO = 10;
+int main()
+{
+    int datos[TAMANYO] = {2, 3, 4, 2,
+        3, 4, 9, 1, 7, 8};
+    sort(datos, datos + TAMANYO);
+    cout << "Datos ordenados: ";
+    for (int i = 0; i != TAMANYO; ++i)
+        cout << datos[i] << " ";
+
+    return 0;
+}
+
+Imprime 1, 2, 2, 3, 3, 4, 4, 7, 8, 9.
